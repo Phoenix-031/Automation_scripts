@@ -57,10 +57,6 @@ mlink.click()
 mlink.send_keys(val)
 mlink.send_keys(Keys.RETURN)
 
-# wait = WebDriverWait(driver,30)
-# dismiss = wait.until(EC.visibility_of_element_located((By.CLASS_NAME,'CwaK9')))
-# dismiss.click()
-
 try:
     wait = WebDriverWait(driver,30)
     dismiss = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,'#yDmH0d > div.llhEMd.iWO5td > div > div.g3VIld.vdySc.Up8vH.J9Nfi.iWO5td > div.XfpsVe.J9fJmf > div > span')))
