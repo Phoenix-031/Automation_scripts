@@ -14,8 +14,8 @@ import time
 from openpyxl import load_workbook,Workbook
 
 # credentials   
-bot_email = "tblazingphoenix@gmail.com"                                 # enter the email address created for the bot
-bot_password = "password_for_oythE123123CT@$#><"                        # enter the password for login into that google account
+bot_email = "enter the email address created"                                 # enter the email address created for the bot
+bot_password = "enter the password for the google account"                        # enter the password for login into that google account
 
 
 val  = input("enter the meeting link :")    # enter the meeting link
