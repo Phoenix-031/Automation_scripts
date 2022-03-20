@@ -1,5 +1,3 @@
-## Author Debayan Pradhan
-
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -18,7 +16,7 @@ bot_email = "enter the email address created"                                 # 
 bot_password = "enter the password for the google account"                        # enter the password for login into that google account
 
 
-val  = input("enter the meeting link :")    # enter the meeting link
+val  = input("enter the meeting code :")    # enter the meeting link
 
 # setting soem chrome options
 opt = Options()
