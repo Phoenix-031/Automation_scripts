@@ -10,10 +10,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 import os
 import time
 from openpyxl import load_workbook,Workbook
+from datetime import datetime
+
+d=datetime.now()
+dt = str(d.hour) + d.strftime("%d-%m-%y")
 
 # credentials   
-bot_email = "enter the email address created"                                 # enter the email address created for the bot
-bot_password = "enter the password for the google account"                        # enter the password for login into that google account
+bot_email = "tblazingphoenix@gmail.com"                                 # enter the email address created for the bot
+bot_password = "password_for_oythE123123CT@$#><"                        # enter the password for login into that google account
 
 
 val  = input("enter the meeting code :")    # enter the meeting link
@@ -90,7 +94,9 @@ sh = wb.create_sheet("Attendence")
 for i,name in enumerate(lst):
      sh.append((name,))                     #inserting the contents of the list in the excel sheet
 
-path = os.path.expanduser('~')
-wb.save(path + '\\Desktop\\'+ 'attendence.xlsx')              # save the file in desktop
 
+path = os.path.expanduser('~')
+spath = path + '\\Desktop\\' + f'attendence{dt}.xlsx'               # path to save the file
+
+wb.save(spath)
 print("Attendence recorded succesfully :) ")
